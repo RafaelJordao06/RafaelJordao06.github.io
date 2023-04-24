@@ -1,9 +1,9 @@
-.formacao {
+.projetos {
   background: #141414;
   color: #ffffff;
 }
 
-.formacao-container {
+.projetos-container {
   max-width: 1200px;
   padding: 120px 20px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.formacao-container::after {
+.projetos-container::after {
   content: "";
   display: block;
   width: 130px;
@@ -24,12 +24,12 @@
   left: 20px;
 }
 
-.formacao .subtitulo {
+.projetos .subtitulo {
   color: #000000;
   max-width: 5ch;
 }
 
-.formacao-texto {
+.projetos-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
@@ -37,7 +37,7 @@
   color: #a3a3a3;
 }
 
-.formacao-texto strong {
+.projetos-texto strong {
   color: #ffffff;
 }
 
@@ -91,7 +91,7 @@
   margin-bottom: 60px;
 }
 
-.formacao-extra h3 {
+.projetos-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #8f8f8f;
@@ -100,7 +100,7 @@
   position: relative;
 }
 
-.formacao-extra h3::before {
+.projetos-extra h3::before {
   display: block;
   content: "";
   width: 24px;
@@ -118,13 +118,13 @@
   background: url("../img/idiomas.svg") no-repeat center center;
 }
 
-.formacao-extra li {
+.projetos-extra li {
   font-size: 1.125rem;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.formacao-extra span {
+.projetos-extra span {
   color: #8f8f8f;
 }
 
@@ -134,18 +134,18 @@
 }
 
 @media (max-width: 800px) {
-  .formacao-container {
+  .projetos-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
   }
-  .formacao .subtitulo {
+  .projetos .subtitulo {
     color: #ffffff;
   }
-  .formacao-texto {
+  .projetos-texto {
     font-size: 1.25rem;
   }
-  .formacao-extra h3::before {
+  .projetos-extra h3::before {
     position: initial;
     margin-bottom: 10px;
   }
