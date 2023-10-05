@@ -8,7 +8,7 @@
 }
 
 .experiencia .subtitulo {
-  color: #e0e0e0;
+  color: #666666;
 }
 
 .experiencia-texto {
@@ -39,7 +39,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#B629F8, #800ADD);
+  background: linear-gradient(#b629f8, #800add);
   position: absolute;
   top: 20px;
   left: -4px;
