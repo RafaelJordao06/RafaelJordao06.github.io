@@ -6,6 +6,11 @@
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
+  padding: 15vh;
+}
+
+.img-perfil{
+  max-width: 110%;
 }
 
 .menu-icon {
