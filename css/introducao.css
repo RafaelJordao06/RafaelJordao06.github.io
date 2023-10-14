@@ -1,16 +1,11 @@
 .introducao {
   max-width: 1000px;
-  padding: 40px 20px;
+  padding: 15vh 115px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
   align-items: center;
-  padding: 15vh;
-}
-
-.img-perfil{
-  max-width: 110%;
 }
 
 .menu-icon {
