@@ -1,261 +1,1292 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafael Jordão - Desenvolvedor e Designer</title>
-  <meta name="description" content="Desenvolvedor Front End e Back End Localizado em Campos do Jordão">
-  <link rel="icon" href="./img/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./css/style.css">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header">
-    <img src="./img/marca.svg" alt="Rafael" width="200" height="38">
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#formacao">Formação</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="introducao">
-    <img class="img-perfil" src="./img/perfil.jpg" alt="Rafael Jordao" width="360" height="520">
-    <div>
-      <h1>Desenvolvedor<br>Front End &<br>Back End</h1>
-      <p>Com mais de 1 ano de experiência no mercado. 📅</p>
-      <div class="menu-icon">
-        <a href="https://www.linkedin.com/in/rafaeljordaobatista/">
-          <img src="./img/iconLink.svg" alt="Linkedin">
-        </a>
-        <a href="https://github.com/RafaelJordao06">
-          <img src="./img/iconGit.svg" alt="GitHub">
-        </a>
-        <a href="https://wa.me/5512996135323">
-          <img src="./img/iconWhats.svg" alt="WhatsApp">
-        </a>
-        <a href="Curriculo-Rafael-Jordao.pdf" download>
-          <img src="./img/iconDown.svg" alt="Baixar Curriculo">
-        </a>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Rafael Jordão" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Rafael Jordão">Rafael Jordão</h1>
+
+          <p class="title">Desenvolvedor Full Stack</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Mostrar contatos</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rafaeljordao.b@gmail.com" class="contact-link">rafaeljordao.b@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefone</p>
+
+              <a href="tel:12996135323" class="contact-link">+55 (12) 99613-5323</a>
+            </div>
+
+          </li>
+
+          <!-- <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">June 23, 1982</time>
+            </div>
+
+          </li> -->
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localização</p>
+
+              <address>Campos do Jordão, São Paulo, Brasil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/RafaelJordao06" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/rafaeljordaobatista/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="Curriculo-Rafael-Jordao.pdf" download class="social-link">
+              <ion-icon name="document-attach-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Sobre</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experiência</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contato</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #SOBRE
+      -->
+
+      <article class="about  active" data-page="sobre">
+
+        <header>
+          <h2 class="h2 article-title">Sobre mim</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Sempre preferi resolver problemas em vez de reclamar deles. Essa mentalidade, aliada à minha paixão por
+            tecnologia desde os 7 anos de idade, me levou ao mundo da programação. Essa paixão pela área me impulsiona a
+            querer sempre ir além e enfrentar novos desafios.
+          </p>
+
+          <p>
+            Atualmente, atuo como desenvolvedor fullstack e trabalho diariamente com uma variedade de tecnologias,
+            incluindo PHP, React, React Native, JavaScript, TypeScript, SQL, Vue, HTML, CSS, Bootstrap, Git, Jira e
+            Docker.
+          </p>
+
+          <p>
+            No meu trabalho
+            atual, já desenvolvi APIs que integram com outros sistemas, criei projetos do zero e levei-os até o deploy,
+            além de fornecer manutenção contínua.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">O que faço atualmente</h3>
+
+          <ul class="service-list">
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Development</h4>
+
+                <p class="service-item-text">
+                  Criação de APIs robustas e seguras para garantir uma comunicação perfeita entre sistemas a nível
+                  profissional.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento de sites de alta qualidade a nível profissional.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Desenvolvimento profissional de aplicativos para iOS e Android.
+                </p>
+              </div>
+
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UX Design & UI Design</h4>
+
+                <p class="service-item-text">
+                  Criar experiências de usuário intuitivas e envolventes em nível profissional.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="experiência">
+
+        <header>
+          <h2 class="h2 article-title">Experiência</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formação</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Instituto Federal de Educação, Ciência e Tecnologia de São Paulo,
+                Campus Campos do Jordão</h4>
+
+              <span>2016 — 2019</span>
+
+              <p class="timeline-text">
+                Graduado como Técnico em Informática Integrado ao Ensino Médio, com carga horária total de 4334.60h.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Unitau</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Graduando em engenharia da Computação na UNITAU, não foi concluido pois no final de 2022 migrei de
+                curso.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Uninter</h4>
+
+              <span>2023 — Cursando atualemte (previsão 2026)</span>
+
+              <p class="timeline-text">
+                Graduando em Engenharia da SoftWare.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiência</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Memocash Soluções - Estagiário </h4>
+
+              <span>2022 — 2022</span>
+
+              <p class="timeline-text">
+                Como estagiário, minhas funções incluem acompanhar e desenvolver pequenas tarefas sob a supervisão de um
+                desenvolvedor. Essas tarefas envolvem correção de pequenos bugs, realização de testes e outras
+                atividades relacionadas.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Memocash Soluções - Desenvolvedor Júnior</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Como desenvolvedor júnior, minhas principais responsabilidades incluíam a correção de bugs, a
+                normalização de repositórios, a integração com outros sistemas via API, entre outras atividades.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Memocash Soluções - Desenvolvedor Pleno</h4>
+
+              <span>2023 — Presente Momento</span>
+
+              <p class="timeline-text">
+                Como desenvolvedor pleno, minhas principais responsabilidades incluíam a integração com sistemas de
+                terceiros, como iFood e apis de pagamento, o desenvolvimento de APIs bem arquiteturadas, o deployment de
+                projetos, entre outras funções.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Rastreio Fácil - Projeto Pessoal</h4>
+
+              <span>2023 — Presente Momento</span>
+
+              <p class="timeline-text">
+                O aplicativo Rastreio Fácil permite que os usuários localizem suas encomendas dos Correios de forma
+                rápida e fácil. Começou como uma ideia e hoje é um projeto que já esta em produção e sempre melhorando.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Habilidades Profissionais </h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">PHP</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">TypeScript</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Lumen</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Lavarel</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Express</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Vue.js</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React Native</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Rastreio Facil -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://rastreio-facil.vercel.app/#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rastreio01.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Rastreio Fácil</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- Cookin-Up -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://cookin-up-wheat.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/cookinup.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cookin-Up</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- Dev Burguer -->
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://cardapio-online-whatsapp.vercel.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/devburguer.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dev Burguer</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contato">
+
+        <header>
+          <h2 class="h2 article-title">Contato</h2>
+        </header>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Fale comigo</h3>
+
+          <h4 class="h4 mensage-my">Envie uma mensagem para mim no WhatsApp </h4>
+          <h4 class="h4 mensage-my">quem sabe não podemos tomar um café?</h4>
+
+
+
+          <form id="contactForm" class="form" data-form>
+            <textarea id="message" name="message" class="form-input"
+              placeholder="Olá Rafael, acabei de ver seu portifólio e estou entrando em contato..." required
+              data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar mensagem no WhatsApp</span>
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
+
   </main>
 
-  <section class="projetos" id="projetos" aria-label="Projetos">
-    <div class="projetos-container">
-      <h2 class="subtitulo">Projetos</h2>
-      <div class="swiffy-slider">
-        <ul class="slider-container">
-          <li>
-            <img class="img-projetos" src="./img/rastreio01.png">
-            <a class="link-projeto" href="https://rastreio-facil.vercel.app/" target="_blank">rastreio-facil.vercel.app</a>
-            <p class="descricao-projeto">
-              O aplicativo Rastreio Fácil possibilita aos usuários rastrear suas encomendas dos Correios de maneira fácil.<br><br>
-              Atualmente, toda a hospedagem está sendo realizada de forma gratuita, tanto para a API quanto para o projeto. Portanto, pode haver alguma demora nas requisições. <br><br>Assim que o projeto for finalizado, será hospedado oficialmente.
-            </p>
-          </li>
 
-          <li>
-            <img class="img-projetos" src="./img/01.png">
-            <a class="link-projeto" href="https://github.com/RafaelJordao06/GoFinances" target="_blank">Código do projeto no GitHub</a>
-            <p class="descricao-projeto">
-              Objetivo Técnico: Desenvolver o GoFinance, uma aplicação móvel utilizando React Native e TypeScript para fornecer aos usuários um controle centralizado e prático de suas finanças.<br><br>
-              Tecnologias Utilizadas: Frontend (React Native) - Framework JavaScript para construção de interfaces nativas em iOS e Android. Linguagem (TypeScript) - Introduz tipagem estática ao JavaScript, proporcionando robustez ao desenvolvimento.<br><br>
-              Propósito: Foco na entrega de uma interface intuitiva e eficiente, refletindo o compromisso com o desenvolvimento ágil, escalável e de alta performance no contexto financeiro.
-            </p>
-          </li>
 
-          <li>
-            <img class="img-projetos" src="./img/GoFinances01.png">
-            <a class="link-projeto" href="https://github.com/RafaelJordao06/GoFinances" target="_blank">Código do projeto no GitHub</a>
-            <p class="descricao-projeto">
-              Controle de Gastos ao Alcance de um Toque!<br><br>
-              Nunca foi tão fácil controlar suas finanças. <br>Com o goFinances, você pode registrar todas as suas entradas e despesas de forma prática e organizada. Diga adeus às planilhas complicadas!
-            </p>
-          </li>
 
-          <li>
-            <img class="img-projetos" src="./img/GoFinances02.png">
-            <a class="link-projeto" href="https://github.com/RafaelJordao06/GoFinances" target="_blank">Código do projeto no GitHub</a>
-            <p class="descricao-projeto">
-              Visualização Clara para Decisões Inteligentes<br><br>
-              Nosso dashboard foi projetado pensando em você. <br> Com uma interface intuitiva, veja todas as suas transações de relance e mergulhe no gráfico em pizza para uma análise detalhada dos seus gastos. Informação é poder!
-            </p>
-          </li>
 
-          <li>
-            <img class="img-projetos" src="./img/GoFinances03.png">
-            <a class="link-projeto" href="https://github.com/RafaelJordao06/GoFinances" target="_blank">Código do projeto no GitHub</a>
-            <p class="descricao-projeto">
-              Segurança é Nossa Prioridade<br><br>
-              Sabemos o quanto suas informações financeiras são valiosas.<br> Por isso, no goFinances, todas as suas transações e dados são armazenadas diretamente no seu dispositivo, sem intermédios.
-            </p>
-          </li>
 
-          <li>
-            <img class="img-projetos" src="./img/02.png">
-            <a class="link-projeto" href="https://github.com/RafaelJordao06/P-gina-inicial-da-StarBucks-Pagina-" target="_blank">Código do projeto no GitHub</a>
-            <p class="descricao-projeto">
-              Objetivo Técnico: Desenvolver o Starbucks Jordan, um dos meus primeiros sites, com o intuito de praticar habilidades de estilização. O site é simples e não possui funcionalidades; o principal objetivo foi a prática do uso do CSS.
-            </p>
-          </li>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-        </ul>
-
-        <button type="button" class="slider-nav"></button>
-        <button type="button" class="slider-nav slider-nav-next"></button>
-
-        <div class="slider-indicators">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="experiencia" id="experiencia" aria-label="Experiência">
-    <h2 class="subtitulo">Experiência</h2>
-    <div>
-      <p class="experiencia-texto">Minha experiência profissional abrange o desenvolvimento de novos projetos e a manutenção de sistemas. Iniciei minha trajetória no front-end, utilizando <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>, e posteriormente migrei para o back-end, onde foquei na criação de APIs. Mais especificamente, participei da integração de sistemas com APIs externas.</p>
-
-      <div class="empresa">
-        <span class="empresa-ano">2022</span>
-        <h3 class="empresa-titulo">Memocash Soluções</h3>
-        <span class="empresa-titulo">Desenvolvedor Júnior</span>
-        <p class="empresa-texto">Desenvolvi e prestei manutenção em códigos focados para plataforma web. Fiz integrações via API de outras plataformas.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>Lumen</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">Portifólio</h3>
-        <span class="empresa-titulo">Hobby</span>
-        <p class="empresa-texto">Desenvolvi esse portifólio, todo design foi feito através do Figma e para desenvolver foi ultilizado HTML, CSS e JavaScript.</p>
-        <ul class="empresa-habilidades">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">GoFinances</h3>
-        <span class="empresa-titulo">Hobby</span>
-        <p class="empresa-texto">O GoFinance é uma aplicação móvel desenvolvida com React Native e TypeScript, projetada para oferecer aos usuários um controle prático e centralizado de suas finanças.</p>
-        <ul class="empresa-habilidades">
-          <li>TypeScript</li>
-          <li>React Native</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">Receita Fácil</h3>
-        <span class="empresa-titulo">Hobby</span>
-        <p class="empresa-texto">O aplicativo de Receita Fácil permite que o usuário visualize diversas receitas de forma detalhada, incluindo vídeo de preparação, lista de ingredientes e modo de preparo.</p>
-        <ul class="empresa-habilidades">
-          <li>JavaScript</li>
-          <li>React Native</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
-
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">Rastreio Fácil</h3>
-        <span class="empresa-titulo">Hobby</span>
-        <p class="empresa-texto">O aplicativo Rastreio Fácil permite que os usuários localizem suas encomendas dos Correios de forma rápida e fácil.</p>
-        <ul class="empresa-habilidades">
-          <li>TypeScript</li>
-          <li>React Native</li>
-          <li>UX Design</li>
-          <li>UI Design</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="formacao" id="formacao" aria-label="Formação">
-    <div class="formacao-container">
-      <h2 class="subtitulo">Formação</h2>
-
-      <div>
-        <p class="formacao-texto">
-          Minha experiência acadêmica mais recente inclui minha admissão no prestigioso curso de graduação em <strong>Engenharia de Software</strong> 🎓, onde estou empenhado em aprofundar meu conhecimento na área. Além disso, estou totalmente comprometido em aprimorar minhas habilidades por meio de aulas de inglês e cursos especializados, garantindo que estou preparado para enfrentar os desafios e oportunidades que surgirão em minha carreira.
-        </p>
-
-        <ul class="faculdade-lista">
-          <li class="faculdade">
-            <span class="faculdade-tipo">Ensino Médio</span>
-            <h3 class="faculdade-curso">Ensino Médio</h3>
-            <span class="faculdade-instituicao">IFSP</span>
-          </li>
-          <li class="faculdade">
-            <span class="faculdade-tipo">Tecnólogo</span>
-            <h3 class="faculdade-curso">Técnico em Informática</h3>
-            <span class="faculdade-instituicao">IFSP</span>
-          </li>
-          <li class="faculdade">
-            <span class="faculdade-tipo">Graduação</span>
-            <h3 class="faculdade-curso">Engenharia de SoftWare</h3>
-            <span class="faculdade-instituicao">UNINTER</span>
-          </li>
-        </ul>
-
-        <div class="formacao-extra">
-          <div class="cursos">
-            <h3>Cursos Intensivos</h3>
-            <ul>
-              <li>UX Design & UI Design <span>56h</span></li>
-              <li>Front End para Iniciantes <span>72h</span></li>
-            </ul>
-          </div>
-          <div class="idiomas">
-            <h3>Idiomas</h3>
-            <ul>
-              <li>Inglês <span>/ Intermediário</span></li>
-              <li>Espanhol <span>/ Intermediário</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer" id="contato">
-    <div class="footer-container">
-      <p class="footer-texto">Minha disponibilidade para novos projetos representa uma oportunidade valiosa para aprimorar seus objetivos. Entre em contato comigo agora mesmo, e teremos uma conversa que pode fazer a diferença no seu sucesso. Vamos começar a transformar suas ideias em realidade e alcançar resultados extraordinários juntos! 👋</p>
-      <ul class="footer-contato">
-        <li><a href="mailto:rafaeljordao.b@gmail.com">rafaeljordao.b@gmail.com</a></li>
-        <li><a href="https://wa.me/5512996135323">+55 12 99613-5323</a></li>
-        <!-- <li><a href="https://www.instagram.com/opajordao/">@opajordao</a></li> -->
-      </ul>
-      <p class="footer-copy">Rafael Jordão. Alguns direitos reservados.</p>
-    </div>
-  </footer>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
