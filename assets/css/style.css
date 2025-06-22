@@ -2166,3 +2166,129 @@ textarea.form-input::-webkit-resizer {
 /**
  * copyright 2022 @codewithsadee
  */
+
+/* Card de Projeto */
+.project-card {
+  background: var(--eerie-black-1);
+  border-radius: 16px;
+  box-shadow: var(--shadow-2);
+  padding: 0 0 20px 0;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  box-shadow: var(--shadow-4);
+}
+
+.project-card-content {
+  padding: 0 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-description {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  margin: 10px 0 10px 0;
+  font-weight: var(--fw-300);
+  line-height: 1.5;
+}
+
+.project-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-tech-list li {
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: var(--fw-400);
+  margin-bottom: 4px;
+}
+
+/* Cards maiores para projetos */
+.project-card {
+  min-height: 420px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-img {
+  height: 300px;
+}
+
+.project-card-content {
+  padding: 0 30px 20px 30px;
+}
+
+.project-description {
+  font-size: var(--fs-5);
+  min-height: 60px;
+}
+
+.project-tech-list li {
+  font-size: var(--fs-6);
+  padding: 6px 14px;
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-card {
+    min-height: 480px;
+    max-width: 100%;
+  }
+  .project-img {
+    height: 320px;
+  }
+  .project-description {
+    min-height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .project-card {
+    min-height: 520px;
+    max-width: 900px;
+  }
+  .project-img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    min-height: 360px;
+    max-width: 100%;
+    padding: 0;
+  }
+  .project-img {
+    height: 200px;
+  }
+  .project-card-content {
+    padding: 0 10px 10px 10px;
+  }
+  .project-description {
+    font-size: var(--fs-6);
+    min-height: 40px;
+  }
+  .project-tech-list li {
+    font-size: var(--fs-7);
+    padding: 4px 8px;
+  }
+}

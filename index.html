@@ -837,16 +837,16 @@ As tecnologias utilizadas incluem PHP, Laravel/Lumen, JavaScript, TypeScript, Ex
       <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Projetos</h2>
         </header>
 
         <section class="projects">
 
           <ul class="filter-list">
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
-            </li>
+            </li> -->
 
             <!-- <li class="filter-item">
               <button data-filter-btn>Web design</button>
@@ -856,9 +856,9 @@ As tecnologias utilizadas incluem PHP, Laravel/Lumen, JavaScript, TypeScript, Ex
               <button data-filter-btn>Applications</button>
             </li> -->
 
-            <li class="filter-item">
+            <!-- <li class="filter-item">
               <button data-filter-btn>Web development</button>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -876,9 +876,9 @@ As tecnologias utilizadas incluem PHP, Laravel/Lumen, JavaScript, TypeScript, Ex
 
             <ul class="select-list">
 
-              <li class="select-item">
+              <!-- <li class="select-item">
                 <button data-select-item>All</button>
-              </li>
+              </li> -->
 
               <!-- <li class="select-item">
                 <button data-select-item>Web design</button>
@@ -888,9 +888,9 @@ As tecnologias utilizadas incluem PHP, Laravel/Lumen, JavaScript, TypeScript, Ex
                 <button data-select-item>Applications</button>
               </li> -->
 
-              <li class="select-item">
+              <!-- <li class="select-item">
                 <button data-select-item>Web development</button>
-              </li>
+              </li> -->
 
             </ul>
 
@@ -898,62 +898,127 @@ As tecnologias utilizadas incluem PHP, Laravel/Lumen, JavaScript, TypeScript, Ex
 
           <ul class="project-list">
 
-            <!-- Rastreio Facil -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://rastreio-facil.vercel.app/#" target="_blank">
+            <!-- Kontrolle -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <div class="project-card">
+                <a href="https://www.kontrolle.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/kontrolle3.png" alt="Kontrolle" loading="lazy">
+                  </figure>
+                </a>
+                <div class="project-card-content">
+                  <h3 class="project-title">Kontrolle <span class="project-subtext">(clique na imagem para acessar)</span></h3>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/rastreio01.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Rastreio Fácil</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <!-- Smart Fin -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://finloop.com.br/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Capa.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">FinLoop</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+                  <!-- <p class="project-category">Web development</p> -->
+                  <p class="project-description">
+                    Aplicação web para controle de gastos pessoais, permitindo gerenciar cartões de crédito, eventos recorrentes e diversas outras funcionalidades. Com uma interface intuitiva e recursos avançados, o sistema auxilia no acompanhamento das despesas, definição de metas e monitoramento do progresso financeiro de forma prática e organizada.
+                  </p>
+                  <ul class="project-tech-list">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Vite</li>
+                    <li>Tailwind CSS</li>
+                    <li>Shadcn UI</li>
+                    <li>PostgreSQL</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>JWT</li>
+                    <li>Bcrypt</li>
+                    <li>Multer</li>
+                    <li>Zod</li>
+                  </ul>
+                </div>
+              </div>
             </li>
 
             <!-- Dev Burguer -->
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://cardapio-online-whatsapp.vercel.app/" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/devburguer.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dev Burguer</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
+            <li class="project-item active" data-filter-item data-category="web development">
+              <div class="project-card">
+                <a href="https://cardapio-online-whatsapp.vercel.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/devburguer.png" alt="Dev Burguer" loading="lazy">
+                  </figure>
+                </a>
+                <div class="project-card-content">
+                  <h3 class="project-title">Dev Burguer <span class="project-subtext">(clique na imagem para acessar)</span</h3>
+                  <p class="project-description">Sistema de cardápio online para restaurantes, com integração com WhatsApp para receber pedidos e gerenciar o cardápio de forma fácil e eficiente.</p>
+                  <ul class="project-tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
             </li>
+
+            <!-- Rastreio Facil -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <div class="project-card">
+                <a href="https://rastreio-facil.vercel.app/#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/rastreio01.png" alt="Rastreio Fácil" loading="lazy">
+                  </figure>
+                </a>
+                <div class="project-card-content">
+                  <h3 class="project-title">Rastreio Fácil <span class="project-subtext">(clique na imagem para acessar)</span</h3>
+                  <p class="project-description">Sistema de rastreio de encomendas, com integração com diversos correios e transportadoras, permitindo acompanhar o status do pedido e receber notificações em tempo real.</p>
+                  <ul class="project-tech-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>AWS</li>
+                    <li>Local Storage</li>
+                    <li>Lambda</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Smart Fin -->
+            <li class="project-item active" data-filter-item data-category="web development">
+              <div class="project-card">
+                <a href="https://finloop.com.br/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/Capa.png" alt="FinLoop" loading="lazy">
+                  </figure>
+                </a>
+                <div class="project-card-content">
+                  <h3 class="project-title">FinLoop <span class="project-subtext">(clique na imagem para acessar)</span</h3>
+                  <p class="project-description">Sistema de controle de finanças pessoais, permitindo gerenciar receitas, despesas e metas financeiras de forma simples e eficiente.</p>
+                  <ul class="project-tech-list">
+                    <li>React</li>
+                    <li>Tailwind CSS</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>PostgreSQL</li>
+                    <li>JWT</li>
+                    <li>clerk</li>
+                    <li>Zod</li>
+                    <li>OpenAI</li>
+                    <li>Stripe</li>
+                    <li>Prisma</li>
+                    <li>Vercel</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            
 
             <!-- <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
